@@ -1,0 +1,12 @@
+import os
+import subprocess
+#subprocess.run(["ls","-l","-a","README.md"])
+#os.system("ls")
+#command="uname"
+#commandArgument="-a"
+#print(f'Gathering system information with command: {command} {commandArgument}')
+#subprocess.run([command,commandArgument])
+command="ps"
+commandArgument="-x"
+print(f'Gathering active process information with command: {command} {commandArgument}')
+subprocess.run([command,commandArgument])
